@@ -1,18 +1,22 @@
 from pymongo import MongoClient
+import json
 
 client = MongoClient('localhost', 27017)
 db = client.betrush
 events = db.events
 
 def process_event(status):
+	status = json.loads(status)
 	event = {}
-	event['tweet_id'] = status.id
+	event['tweet_id'] = status["id"]
+	print "before Mongo: ", event
 	kind, additions = filter_status(status)
 	if kind == 'open':
 		event.update(additions)
 		create_event(event)
 	elif kind == 'closed':
 		close_event(additions)
+	print "After Mongo: ", event
 
 
 def create_event(event):
@@ -26,7 +30,7 @@ def close_event(winning_options):
 	print("Event successfully updated in db with id {}".format(event_id))
 	
 def filter_status(status):
-	tweet = status.text
+	tweet = status["text"]
 	open_bet = "#PlaceBet"
 	close_bet = "#BetsRClosed"
 	tag_location = tweet.find(open_bet)

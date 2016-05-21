@@ -7,6 +7,7 @@ import argparse
 import string
 import config
 import json
+import mongo_writer
 
 class MyListener(StreamListener):
     """Custom StreamListener for streaming data."""
@@ -17,6 +18,7 @@ class MyListener(StreamListener):
 
     def on_data(self, data):
         try:
+            mongo_writer.process_event(data)
             with open(self.outfile, 'a') as f:
                 f.write(data)
                 print(data)
