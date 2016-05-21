@@ -16,6 +16,9 @@ var eventSchema = new schema({
     options: {
         type: Array
     },
+    results: {
+        type: Array
+    },
     bets: [{
         type: mongoose.Schema.Types.ObjectId, 
         ref: 'bet'
