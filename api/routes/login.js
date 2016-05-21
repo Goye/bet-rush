@@ -1,7 +1,6 @@
 var controllers = require('../controllers');
 var passport = require('passport');
-var passportConfig = require('../config/passport');
-exports.init = function(app, auth) {
+exports.init = function(app) {
     app.get('/auth/facebook', passport.authenticate('facebook'));
     app.get('/auth/facebook/callback', controllers.Login.facebookCallback);
 };

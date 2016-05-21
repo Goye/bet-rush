@@ -4,7 +4,6 @@ var Controller = function() {};
 
 Controller.prototype.facebookCallback = function(req, res) {
   passport.authenticate('facebook', function(err, user, info){
-    console.log(user);
     if (info && !user) {
       return res.status(400).json(info);
     } else {
