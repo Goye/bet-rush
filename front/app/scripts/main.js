@@ -1,34 +1,20 @@
-(function() { 
-  angular.module('prodigi', [
-    'prodigi.test',
+(function() {
+  angular.module('betrush', [
     'prodigi.header',
-    'prodigi.hero',
-    'prodigi.about',
-    'prodigi.event',
-    'prodigi.hosts',
-    'prodigi.inscription',
-    'prodigi.contact',
-    'prodigi.schedule',
-    'prodigi.footer',
     'prodigi.login',
     'ui.router',
-    'ngTable',
-    'cgBusy',
     'textAngular'
   ]).config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
     function($stateProvider, $urlRouterProvider, $locationProvider) {
       $locationProvider.html5Mode(true);
       $urlRouterProvider.otherwise('/');
       $stateProvider
+
         .state('/', {
           url: '/',
-          templateUrl: '/index.html'
-        })
-        .state('admin', {
-          url: '/admin',
           views: {
             content: {
-              templateUrl: '/views/admin/partials/login.view.html',
+              templateUrl: '/views/partials/login.view.html',
               controller: 'LoginCtrl',
               controllerAs: 'vm'
             }

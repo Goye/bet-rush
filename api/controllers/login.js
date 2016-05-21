@@ -1,9 +1,16 @@
 var mongoose = require('mongoose');
-
+var passport = require('passport');
 var Controller = function() {};
 
-Controller.prototype.doLogin = function(req, res) {
-  res.json({ title: 'Express' });
+Controller.prototype.facebookCallback = function(req, res) {
+  passport.authenticate('facebook', function(err, user, info){
+    console.log(user);
+    if (info && !user) {
+      return res.status(400).json(info);
+    } else {
+      return res.status(200).json(user);
+    }
+  })(req, res);
 };
 
 module.exports = new Controller();
