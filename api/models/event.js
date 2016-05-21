@@ -34,4 +34,4 @@ var eventSchema = new schema({
     updateAt: Date
 });
 
-module.exports = mongoose.model('user', eventSchema);
+module.exports = mongoose.model('event', eventSchema);
