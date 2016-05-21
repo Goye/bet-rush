@@ -70,5 +70,4 @@ if __name__ == '__main__':
     api = tweepy.API(auth)
 
     twitter_stream = Stream(auth, MyListener(config.directory, '-'))
-    #twitter_stream.filter(track=['-'])
-    twitter_stream.userstream()
+    twitter_stream.userstream(_with='user')
