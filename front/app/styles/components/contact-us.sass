@@ -1,0 +1,45 @@
+@import 'variables'
+
+.contact
+  background: url("/images/backgroundblackcolors.png")
+  background-size: cover
+  padding: 50px 0
+
+  &__content
+    color: $prodigi-white
+    width: 80%
+    margin: 0 auto
+
+  &__header
+    font-family: $gotham-black
+    font-size: 21px
+    letter-spacing: 1px
+    text-transform: uppercase
+    margin-top: 0
+
+  &__copy
+    font-family: $gotham-book
+    font-size: 16px
+    line-height: 20px
+    margin: 0
+
+    strong
+      font-family: $gotham-medium
+
+  &__link, &__link:active, &__link:focus, &__link:visited
+    @extend .contact__copy
+    color: $prodigi-blue
+    text-decoration: none
+
+  @media screen and (min-width: 768px)
+    padding: 55px 0
+
+    &__content
+      width: 750px
+
+    &__copy
+      line-height: 23px
+
+  @media screen and (min-width: 992px)
+    &__content
+      width: 976px

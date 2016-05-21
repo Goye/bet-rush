@@ -1,0 +1,182 @@
+@import 'variables'
+
+html
+  font-size: 14px
+
+button
+  border: 0
+
+.ins
+  width: 90%
+  margin: 0 auto
+
+  .requirement
+    color: $prodigi-blue
+    cursor: pointer
+
+  &__content
+    background-color: #FFF
+    padding: 40px 0px
+
+  &__title
+    font-family: $gotham-black
+
+  &__description
+    font-family: $gotham-book
+    line-height: 20px
+
+  &__collapse
+    margin-bottom: 1%
+    text-align: right
+    width: 100%
+    & > span
+      cursor: pointer
+      font-family: $gotham-black
+
+  &__form
+    transition: max-height 1s
+    max-height: 750px
+    overflow: hidden
+    &.clicked
+      max-height: 0
+
+    &__content
+      width: 100%
+      font-size: 0px
+      margin: 0 auto
+
+      &__rows
+        width: 100%
+        padding: 0px
+        margin-bottom: 30px
+
+        &__row
+          height: 64px
+          font-size: 0.9rem
+          list-style: none
+
+          & > label
+            display: block
+            padding-bottom: 4px
+            font-family: $gotham-book
+
+          & > input[type="text"], input[type="email"]
+            border: none
+            border-bottom: 2px solid #777
+            font-size: 1.2rem
+            font-family: $gotham-book
+            width: 100%
+            outline: none
+
+          & > .custom-dropdown
+            position: relative
+            width: 100%
+            font-size: 0.7rem
+            padding-top: 2px
+
+            & > select
+              appearance: none
+              border: none
+              border-bottom: 2px solid #777
+              font-size: 1.2rem
+              font-family: $gotham-book
+              width: 100%
+              outline: none
+              &::-ms-expand
+                display: none
+
+            &:after
+              content: "▼"
+              pointer-events: none
+              position: absolute
+              color: #000
+              right: 5px
+              top: 0
+
+          & > ul
+            columns: 3
+            column-count: 3
+            padding: 0px
+
+            & > li
+              list-style: none
+
+            & > li > div
+              padding-top: 2px
+
+              & > label
+                position: relative
+                line-height: 22px
+                padding-left: 25px
+
+              & > input[type="checkbox"]
+                display: none
+
+                &:not(:checked) + label, &:checked + label
+                  &:before
+                    content: ''
+                    position: absolute
+                    padding: 10px
+                    left: 0
+
+                &:not(:checked) + label
+                  &:before
+                    background: url('/images/ch2.jpg') no-repeat top left
+                    background-size: 20px 20px
+
+                &:checked + label
+                  &:before
+                    background: url('/images/ch1.jpg') no-repeat top left
+                    background-size: 20px 20px
+
+      &__button > button
+          background: $prodigi-black
+          font-size: 1.1rem
+          color: white
+          width: 100%
+          padding: 13px
+          border-radius: 12px
+          text-transform: uppercase
+          font-family: $gotham-black
+          margin-top: 10px
+          outline: none
+          &:hover
+            opacity: .9
+            background: url('../images/hover-boton.png') no-repeat top left
+            background-size: cover
+
+.required
+  display: block
+  color: #ff0000
+  padding-top: 6px
+  font-size: 0.7rem
+  text-align: right
+  font-style: italic
+
+.hide-content
+  display: none
+
+@media only screen and (min-width: 768px)
+  .ins
+    width: 750px
+
+@media only screen and (min-width: 992px)
+  .ins
+    width: 976px
+    &__form
+      &__content
+        &__rows
+          width: 100%
+          columns: 2
+          column-count: 2
+          column-gap: 20px
+          &__row
+            & > ul
+              columns: 4
+              column-count: 4
+              column-gap: 0
+              padding: 0px
+
+        &__button > button
+          width: 38%
+          float: right

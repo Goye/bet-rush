@@ -1,0 +1,10 @@
+<section class="host-detail">
+  <div class="close-dialog" ng-click="closeThisDialog()">cerrar</div>
+  <img class="host-detail__picture" src="{{ host.photo }}" alt="" height="200">
+  <div class="host-detail__profile">
+    <h1 class="host-detail__header">{{host.name}}</h1>
+    <p class="host-detail__role">{{host.role}}</p>
+    <hr class="divider divider--xs-center"/>
+    <div ng-bind-html="host.body" ></div>
+  </div>
+</section>

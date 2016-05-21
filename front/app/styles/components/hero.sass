@@ -1,0 +1,90 @@
+@import 'variables'
+
+a
+  color: $prodigi-blue
+  text-decoration: none
+.hero
+  background-image: url("/images/backgroundblackcolors.png")
+  background-position: 0 0
+  background-size: cover
+  height: auto
+  padding: 1% 0 140px
+  position: relative
+  overflow: hidden
+  margin: 0 auto
+  &-content
+    width: 80%
+    margin: 0 auto
+  img
+    position: absolute
+    right: 10%
+    bottom: 0
+    transform: translateX(50%)
+  .hero-date
+    color: $prodigi-white
+    width: 90%
+    h2
+      font-family: $gotham-black
+      text-transform: uppercase
+      font-size: 35px
+      position: relative
+      letter-spacing: 2px
+      display: inline-block
+    h2:after
+      content: ""
+      position: absolute
+      top: 45px
+      left: 0
+      border-top: 6px solid $prodigi-white
+      width: 100%
+    h4
+      font-family: $gotham-light
+      text-transform: uppercase
+      margin: 6px 0
+  .description
+    font-family: $gotham-light
+    font-size: 14px
+    color: $prodigi-white
+    width: 60%
+    line-height: 20px
+    h4
+      font-family: $gotham-light
+      text-transform: uppercase
+      margin: 6px 0
+    strong
+      font-family: $gotham-medium
+    .small-text, h6
+      font-size: 13px
+    .inscription-text
+      font-family: $gotham-medium
+      font-size: 12px
+      display: block
+      width: 50%      
+
+@media screen and (min-width: 768px)
+  .hero
+    height: 720px
+    padding-bottom: 0
+  .hero-content
+    width: 750px
+  .hero .hero-date h2
+    font-size: 45px
+  .hero .hero-date h2:after
+    top: 55px
+  .hero .description
+    width: 40%
+  .hero img
+    right: 20%
+
+@media screen and (min-width: 992px)
+  .hero-content
+    width: 976px
+  .hero .hero-date
+    width: 100%
+  .hero img
+    right: 50%
+  .hero .description
+    width: 30%
+  .hero .description .inscription-text
+    display: block
+    width: 50%
