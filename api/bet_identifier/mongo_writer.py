@@ -25,10 +25,12 @@ def create_event(event):
 	print("Event successfully entered in db with id {}".format(event_id))
 
 def close_event(winning_options):
-	event = events.find_one({'tweet_id': winning_options['original_id']})
-	event['results'] = winning_options.results
-	event_id = events.insert_one(event).inserted_id
-	print("Event successfully updated in db with id {}".format(event_id))
+	write_results = events.update_one({'tweet_id': winning_options['original_id']},{
+		'$set': {
+			'results': winning_options['results']
+		}})
+
+	print("Event successfully updated: {}".format(write_results))
 	
 def filter_status(status):
 	tweet = status["text"]
