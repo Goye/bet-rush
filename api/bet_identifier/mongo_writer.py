@@ -6,7 +6,8 @@ db = client.betrush
 events = db.events
 
 def process_event(status):
-	status = json.loads(status)
+	#TODO delete this comment	
+	#status = json.loads(status)
 	event = {}
 	event['tweet_id'] = status["id"]
 	print "before Mongo: ", event
