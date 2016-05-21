@@ -1,0 +1,133 @@
+﻿<section id="inscriptionSection" class="ins">
+  <div class="ins__content">
+    <h2 class="ins__title">
+      INSCRIPCIONES
+    </h2>
+    <p class="ins__description">
+      Ten en cuenta que la inscripción al evento solo aplica para las universidades que se encuentran listadas en el formulario y el participante debe cumplir con los requerimientos establecidos para el evento. <a class="requirement" ng-click="vm.showRequirments()">Ver requerimientos</a>
+    </p>
+    <div class="ins__collapse">
+      <span ng-click="vm.collapse = !vm.collapse">
+        LLENAR FORMULARIO
+        <span ng-class="vm.collapse ? 'fa fa-caret-down' : 'fa fa-caret-up'">
+        </span>
+      </span>
+    </div>
+    <div class="ins__form" ng-class="{'clicked': vm.collapse}">
+      <form name="form" class="ins__form__content" novalidate>
+        <ul class="ins__form__content__rows">
+          <li class="ins__form__content__rows__row">
+            <label for="name">
+              Nombre
+            </label>
+            <input type="text" id="name" ng-model="vm.data.name.firstName" name="firstName" required title="Nombre" maxlength="30" />
+            <span ng-class="{'hide-content': !form.firstName.$error.required}" class="required">Requerido</span>
+          </li>
+          <li class="ins__form__content__rows__row">
+            <label for="lastName">
+              Apellido
+            </label>
+            <input type="text" id="lastName" ng-model="vm.data.name.lastName" name="lastName" required title="Apellido" maxlength="30" />
+            <span ng-class="{'hide-content': !form.lastName.$error.required}" class="required">Requerido</span>
+          </li>
+          <li class="ins__form__content__rows__row">
+            <label for="idNumber">
+              Cédula
+            </label>
+            <input type="text" id="idNumber" ng-model="vm.data.idNumber" name="idNumber" required title="Cedula" maxlength="30" />
+            <span ng-class="{'hide-content': !form.idNumber.$error.required}" class="required">Requerido</span>
+          </li>
+          <li class="ins__form__content__rows__row">
+            <label for="age" >
+              Edad
+            </label>
+            <input type="text" id="age" ng-model="vm.data.age" name="age" required title="Edad" maxlength="3" />
+            <span ng-class="{'hide-content': !form.age.$error.required}" class="required">Requerido</span>
+          </li>
+          <li class="ins__form__content__rows__row">
+            <label for="email" >
+              Email
+            </label>
+            <input type="email" id="email" ng-model="vm.data.email" name="email" required title="Email" maxlength="50" />
+            <span ng-class="{'hide-content': !form.email.$error.required}" class="required">Requerido</span>
+          </li>
+          <li class="ins__form__content__rows__row">
+            <label for="phone" >
+              Teléfono
+            </label>
+            <input type="text" id="phone" ng-model="vm.data.phone" name="phone" required title="Teléfono" pattern="[0-9]{7,10}" maxlength="10" />
+            <span ng-class="{'hide-content': !form.phone.$error.required}" class="required">Requerido</span>
+          </li>
+          <li class="ins__form__content__rows__row">
+            <label for="eps">
+              EPS
+            </label>
+            <input type="text" id="eps" ng-model="vm.data.eps" name="eps" required title="EPS" maxlength="30" />
+            <span ng-class="{'hide-content': !form.eps.$error.required}" class="required">Requerido</span>
+          </li>
+          <li class="ins__form__content__rows__row">
+            <label for="university" >
+              Universidad
+            </label>
+            <span class="custom-dropdown">
+              <select id="university" ng-model="vm.data.university" name="university" required title="Universidad">
+                <option value="" selected>
+                </option>
+                <option value="Universidad de los Andes">
+                  Universidad de los Andes
+                </option>
+                <option value="Universidad Javeriana">
+                  Universidad Javeriana
+                </option>
+                <option value="Universidad Nacional">
+                  Universidad Nacional
+                </option>
+                <option value="Universidad Distrital">
+                  Universidad Distrital
+                </option>
+                <option value="Universidad Militar Nueva Granada">
+                  Universidad Militar Nueva Granada
+                </option>
+                <option value="Universidad Manuela Beltran">
+                  Universidad Manuela Beltran
+                </option>
+                <option value="ECCI">
+                  ECCI
+                </option>
+                <option value="ECCI">
+                  SENA
+                </option>
+              </select>
+            </span>
+            <span ng-class="{'hide-content': !form.university.$error.required}" class="required">Requerido</span>
+          </li>
+          <li class="ins__form__content__rows__row">
+            <label for="preGrade" >
+              Pregrado
+            </label>
+            <input type="text" id="preGrade" ng-model="vm.data.preGrade" name="preGrade" required title="Pregrado" maxlength="100" />
+            <span ng-class="{'hide-content': !form.preGrade.$error.required}" class="required">Requerido</span>
+          </li>
+          <li class="ins__form__content__rows__row">
+            <label for="knowledges">
+              Conocimientos
+            </label>
+            <ul>
+              <li ng-repeat="knowledge in ['CSS', 'CSS3', 'HTML', 'HTML5', 'JavaScript', 'Frameworks', 'Grunt', 'Gulp']">
+                <div>
+                  <input type="checkbox" id="{{knowledge}}" ng-click="vm.toggleSelection(knowledge)" />
+                  <label for="{{knowledge}}">
+                    {{knowledge}}
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="ins__form__content__button">
+          <button type="submit" ng-click="vm.sendData(form)">Inscribirse</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
