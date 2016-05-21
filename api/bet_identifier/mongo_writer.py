@@ -3,7 +3,7 @@ import json
 
 client = MongoClient('localhost', 27017)
 db = client.betrush
-events = db.events
+events = db.event
 
 def process_event(status):
 	#TODO delete this comment	
