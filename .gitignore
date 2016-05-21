@@ -4,3 +4,6 @@
 api/node_modules/
 front/node_modules/
 front/public/
+# Ignore Mac DS_Store files
+**/.DS_Store
+*.log

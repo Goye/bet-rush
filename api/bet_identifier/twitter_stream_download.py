@@ -7,6 +7,7 @@ import argparse
 import string
 import config
 import json
+import mongo_writer
 
 class MyListener(StreamListener):
     """Custom StreamListener for streaming data."""
@@ -17,6 +18,7 @@ class MyListener(StreamListener):
 
     def on_data(self, data):
         try:
+            mongo_writer.process_event(data)
             with open(self.outfile, 'a') as f:
                 f.write(data)
                 print(data)
@@ -69,5 +71,11 @@ if __name__ == '__main__':
     
     api = tweepy.API(auth)
 
-    twitter_stream = Stream(auth, MyListener(config.directory, '-'))
-    twitter_stream.userstream(_with='user')
+    #TODO delete this comment
+    #twitter_stream = Stream(auth, MyListener(config.directory, '-'))
+    #twitter_stream.userstream(_with='user')
+
+    #TODO delete this code
+    for tweet in tweepy.Cursor(api.user_timeline).items():
+        mongo_writer.process_event(tweet._json)
+        
