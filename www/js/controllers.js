@@ -1,8 +1,8 @@
 angular.module('starter.controllers', [])
 
 .controller('DashCtrl', function($scope) {
-  console.log('dash')
   $scope.showTabs = true;
+  console.log('dash',$scope.showTabs)
 })
 
 .controller('ChatsCtrl', function($scope, Chats) {
