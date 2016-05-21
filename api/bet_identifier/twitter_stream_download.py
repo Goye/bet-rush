@@ -24,10 +24,10 @@ def get_parser():
                         dest="query",
                         help="Query/Filter",
                         default='-')
-    parser.add_argument("-d",
-                        "--data-dir",
-                        dest="data_dir",
-                        help="Output/Data Directory")
+    #parser.add_argument("-d",
+    #                    "--data-dir",
+    #                    dest="data_dir",
+    #                    help="Output/Data Directory")
     return parser
 
 
@@ -92,5 +92,5 @@ if __name__ == '__main__':
     auth.set_access_token(config.access_token, config.access_secret)
     api = tweepy.API(auth)
 
-    twitter_stream = Stream(auth, MyListener(args.data_dir, args.query))
+    twitter_stream = Stream(auth, MyListener(config.directory, args.query))
     twitter_stream.filter(track=[args.query])
