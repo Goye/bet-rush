@@ -3,6 +3,8 @@
     'betrush.header',
     'betrush.login',
     'betrush.bet',
+    'betrush.won',
+    'betrush.lose',
     'ui.router',
     'textAngular'
   ]).config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
@@ -27,6 +29,26 @@
             content: {
               templateUrl: '/views/partials/newbet.view.html',
               controller: 'NewBetCtrl',
+              controllerAs: 'vm'
+            }
+          }
+        })
+        .state('wonBet', {
+          url: '/wonBet',
+          views: {
+            content: {
+              templateUrl: '/views/partials/won.view.html',
+              controller: 'WonBetCtrl',
+              controllerAs: 'vm'
+            }
+          }
+        })
+        .state('loseBet', {
+          url: '/loseBet',
+          views: {
+            content: {
+              templateUrl: '/views/partials/lose.view.html',
+              controller: 'LoseBetCtrl',
               controllerAs: 'vm'
             }
           }

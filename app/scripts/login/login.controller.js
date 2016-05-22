@@ -14,13 +14,13 @@
       $timeout(function(){
         vm.data = [];
         getCards();
-      }, 5000);
+      }, 10000);
     }
     function getCards() {
       vm.event.query({}, function(data){
         console.log(data);
         vm.data = data;
-        //checkTime();
+        checkTime();
       });
     }
 
