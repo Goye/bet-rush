@@ -17,6 +17,10 @@
   left: 0
   z-index: 10
 
+.col-sm-12
+  &.closing
+    animation: closing 0.5s linear
+
 .won
   color: #fff
   .thumbnail
@@ -148,3 +152,8 @@ p
     width: 0px
   100%
     width: 100%
+@keyframes closing
+  0%
+    opacity: 1
+  100%
+    opacity: 0
