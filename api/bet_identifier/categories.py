@@ -6,5 +6,6 @@ abbr = {
     'tv': 'Television',
     'simpsons': 'The Simpsons',
     'hck': 'Hackathon',
-    'poli': 'Politics' 
+    'poli': 'Politics' ,
+    'lol': 'League Of Legends'
 }

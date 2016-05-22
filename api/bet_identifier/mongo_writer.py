@@ -24,12 +24,12 @@ def process_event(status):
 
 def create_event(event):
 	event_id = events.insert_one(event).inserted_id
-	print("Event successfully entered in db with id {}".format(event_id))
+	#print("Event successfully entered in db with id {}".format(event_id))
 
 def close_event(winning_options):
 
 	event = events.find_one({'socialId': str(winning_options['original_id'])})
-	print event
+	#print event
 	if(event):
 		obj_id = event['_id']
 
@@ -41,7 +41,7 @@ def close_event(winning_options):
 
 		not_id = notifications.insert_one({"eventId": obj_id}).inserted_id
 
-		print("Event successfully updated: {} \n Notification: {}".format(write_results, not_id))
+		#print("Event successfully updated: {} \n Notification: {}".format(write_results, not_id))
 	
 def filter_status(status):
 	tweet = status["text"]

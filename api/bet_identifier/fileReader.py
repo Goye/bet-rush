@@ -35,13 +35,13 @@ if __name__ == '__main__':
             
             results.append([millis, data[1]])
 
-            print("tweet posted " + millis)
+            #print("tweet posted " + millis)
 
             time.sleep(sleep_time)
         else :
             if len(results) > 0:
                 result = results.popleft()
-                print result[0], result[1]
+                #print result[0], result[1]
 
                 my_dict['text'] = result[1]
                 my_dict['id'] = millis
