@@ -1,5 +1,6 @@
 var EventModel = require('../models/event');
 var BetModel = require('../models/bet');
+var EventModel = require('../models/event');
 var mongoose = require('mongoose');
 var Controller = function() {};
 
@@ -22,6 +23,26 @@ Controller.prototype.saveBet = function(req, res){
     updateAt: Date.now()
   });
   bet.save(function(err){
+    if (err) {
+      return res.status(400).json(err);
+    } else {
+      return res.status(200).json({message: "success"});
+    }
+  });
+};
+
+Controller.prototype.newEvent = function(req, res){
+  var data = req.body;
+  var options = ['Yes', 'No'];
+  var cant = 10;
+  var event = new EventModel({
+    category: [data.category],
+    name: data.name,
+    options: options,
+    cant: cant,
+    updateAt: Date.now()
+  });
+  event.save(function(err){
     if (err) {
       return res.status(400).json(err);
     } else {

@@ -25,7 +25,7 @@ if __name__ == '__main__':
 
         millis = str(int(round(time.time() * 1000)))[-5:]
         
-        if prob < 0.6:
+        if prob < 0.5:
             event_count = (event_count + 1) %len(content)
             
             event = content[event_count]
@@ -41,6 +41,8 @@ if __name__ == '__main__':
             results.append([place_id, data[1]])
 
             print("tweet posted " + place_id)
+
+            time.sleep(sleep_time)
         else :
             if len(results) > 0:
                 result = results.popleft()
@@ -50,7 +52,9 @@ if __name__ == '__main__':
 
                 api.update_status(status=status, in_reply_to_status_id=result[0])
 
-        time.sleep(sleep_time)
+                time.sleep(sleep_time)
+
+        
 
 
 
