@@ -1,5 +1,6 @@
 from pymongo import MongoClient
 import json
+import datetime
 import categories
 import time
 
@@ -10,7 +11,7 @@ notifications = db.notifications
 
 def process_event(status):
 	#TODO delete this comment	
-	status = json.loads(status)
+	#status = json.loads(status)
 	event = {}
 	event['socialId'] = str(status["id"])
 	kind, additions = filter_status(status)
@@ -52,8 +53,11 @@ def filter_status(status):
 		category, event, options = tweet[tag_location + len(open_bet):].split()
 		category = [categories.abbr.get(x) for x in category.split('-')]
 		options = options.split('-')
+		ts = time.time()
+		isodate = datetime.datetime.fromtimestamp(ts, None)
+		
 		return kind, {
-			'createdAt': time.time(),
+			'createdAt': isodate,
 			'category':category,
 			'name':event,
 			'options':options,

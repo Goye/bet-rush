@@ -13,10 +13,10 @@ Controller.prototype.getEvents = function(req, res) {
     lose: 0
   };
   EventModel.find({
-    // created_at: {
+    // createdAt: {
     //   $gte: date - 15
     // },
-    // closed: false,
+     closed: false,
   }, function(err, data){
     if (err) {
       return res.status(400).json(err);
@@ -90,18 +90,22 @@ function getBetCount(uid, callback){
           event: val.eventId
         })
         .exec(function(err, data){
-          EventModel.findOne(data.event, function(err, event){
-            if (data.option == event.results[0]) {
-              winCount ++;
+          if (data) { 
+              EventModel.findOne(data.event, function(err, event){
+                if (data.option == event.results[0]) {
+                  winCount ++;
+                } else {
+                  loseCount ++;
+                }
+                result = {
+                  win: winCount,
+                  lose: loseCount
+                };
+                callback(key, not.length, result);
+                });
             } else {
-              loseCount ++;
+                callback(key, not.length, result);
             }
-            result = {
-              win: winCount,
-              lose: loseCount
-            };
-            callback(key, not.length, result);
-          });
         });
       });
     }
