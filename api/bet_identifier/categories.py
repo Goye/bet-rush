@@ -5,5 +5,6 @@ abbr = {
     'cin': 'Cine',
     'tv': 'Television',
     'simpsons': 'The Simpsons',
-    'hck': 'Hackathon' 
+    'hck': 'Hackathon',
+    'poli': 'Politics' 
 }

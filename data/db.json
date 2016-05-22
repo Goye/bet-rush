@@ -1,12 +1,12 @@
 /* 1 */
 {
-    "_id" : ObjectId("574110b1ae758c6d8460d462"),
+    "_id" : ObjectId("57411dbeae758c74fb73da10"),
     "category" : [ 
-        "Si", 
-        "No"
+        "Television", 
+        "The Simpsons"
     ],
-    "socialId" : "734196152548139008",
-    "name" : "#AnotaPenalCristianoRonaldo",
+    "socialId" : "734214031616135172",
+    "name" : "#VuelvenLosSimpsonsEnCaracol",
     "closed" : false,
     "live" : "60000",
     "options" : [ 
@@ -17,234 +17,12 @@
 
 /* 2 */
 {
-    "_id" : ObjectId("574110b1ae758c6d8460d463"),
+    "_id" : ObjectId("57411dc4ae758c74fb73da11"),
     "category" : [ 
-        "Si", 
-        "No"
+        "Hackathon"
     ],
-    "socialId" : "734195816831844352",
-    "name" : "#HayPeleaNacionalRosarioCentral",
-    "closed" : false,
-    "live" : "60000",
-    "options" : [ 
-        "Si", 
-        "No"
-    ]
-}
-
-/* 3 */
-{
-    "_id" : ObjectId("574110b1ae758c6d8460d464"),
-    "category" : [ 
-        "Si", 
-        "No"
-    ],
-    "socialId" : "734195773475303424",
-    "name" : "#AnotaPenalCristianoRonaldo",
-    "closed" : false,
-    "live" : "60000",
-    "options" : [ 
-        "Si", 
-        "No"
-    ]
-}
-
-/* 4 */
-{
-    "_id" : ObjectId("574110b1ae758c6d8460d465"),
-    "category" : [ 
-        "Si", 
-        "No"
-    ],
-    "socialId" : "734195628297859072",
-    "name" : "#AnotaPenalCristianoRonaldo",
-    "closed" : false,
-    "live" : "60000",
-    "options" : [ 
-        "Si", 
-        "No"
-    ]
-}
-
-/* 5 */
-{
-    "_id" : ObjectId("574110b1ae758c6d8460d466"),
-    "category" : [ 
-        "Si", 
-        "No"
-    ],
-    "socialId" : "734195605678002176",
-    "name" : "#AnotaPenalCristianoRonaldo",
-    "closed" : false,
-    "live" : "60000",
-    "options" : [ 
-        "Si", 
-        "No"
-    ]
-}
-
-/* 6 */
-{
-    "_id" : ObjectId("574110b1ae758c6d8460d467"),
-    "category" : [ 
-        "Si", 
-        "No"
-    ],
-    "socialId" : "734195283672899584",
-    "name" : "#AnotaPenalCristianoRonaldo",
-    "closed" : false,
-    "live" : "60000",
-    "options" : [ 
-        "Si", 
-        "No"
-    ]
-}
-
-/* 7 */
-{
-    "_id" : ObjectId("574110b1ae758c6d8460d468"),
-    "category" : [ 
-        "Si", 
-        "No"
-    ],
-    "socialId" : "734194941958754306",
-    "name" : "#AnotaPenalCristianoRonaldo",
-    "closed" : false,
-    "live" : "60000",
-    "options" : [ 
-        "Si", 
-        "No"
-    ]
-}
-
-/* 8 */
-{
-    "_id" : ObjectId("574110b1ae758c6d8460d469"),
-    "category" : [ 
-        "Si", 
-        "No"
-    ],
-    "socialId" : "734194138447499265",
-    "name" : "#AnotaPenalCristianoRonaldo",
-    "closed" : false,
-    "live" : "60000",
-    "options" : [ 
-        "Si", 
-        "No"
-    ]
-}
-
-/* 9 */
-{
-    "_id" : ObjectId("574110b1ae758c6d8460d46a"),
-    "category" : [ 
-        "Si", 
-        "No"
-    ],
-    "socialId" : "734194095070060544",
+    "socialId" : "734214079645134848",
     "name" : "#BetRushGanaAngelHack",
-    "closed" : false,
-    "live" : "60000",
-    "options" : [ 
-        "Si", 
-        "No"
-    ]
-}
-
-/* 10 */
-{
-    "_id" : ObjectId("574110b1ae758c6d8460d46b"),
-    "category" : [ 
-        "Si", 
-        "No"
-    ],
-    "socialId" : "734194051449245696",
-    "name" : "#VuelvenLosSimpsonsEnCaracol",
-    "closed" : false,
-    "live" : "60000",
-    "options" : [ 
-        "Si", 
-        "No"
-    ]
-}
-
-/* 11 */
-{
-    "_id" : ObjectId("574110b1ae758c6d8460d46c"),
-    "category" : [ 
-        "capitan", 
-        "ironman"
-    ],
-    "socialId" : "734194007723651072",
-    "name" : "#GanaCapitanAmericaOIronMan",
-    "closed" : false,
-    "live" : "60000",
-    "options" : [ 
-        "capitan", 
-        "ironman"
-    ]
-}
-
-/* 12 */
-{
-    "_id" : ObjectId("574110b1ae758c6d8460d46d"),
-    "category" : [ 
-        "Si", 
-        "No"
-    ],
-    "socialId" : "734193963960270848",
-    "name" : "#HayPeleaNacionalRosarioCentral",
-    "closed" : false,
-    "live" : "60000",
-    "options" : [ 
-        "Si", 
-        "No"
-    ]
-}
-
-/* 13 */
-{
-    "_id" : ObjectId("574110b1ae758c6d8460d46e"),
-    "category" : [ 
-        "Si", 
-        "No"
-    ],
-    "socialId" : "734193920326914048",
-    "name" : "#AnotaPenalCristianoRonaldo",
-    "closed" : false,
-    "live" : "60000",
-    "options" : [ 
-        "Si", 
-        "No"
-    ]
-}
-
-/* 14 */
-{
-    "_id" : ObjectId("574110b1ae758c6d8460d46f"),
-    "category" : [ 
-        "Si", 
-        "No"
-    ],
-    "socialId" : "734193330100310017",
-    "name" : "#AnotaPenalCristianoRonaldo",
-    "closed" : false,
-    "live" : "60000",
-    "options" : [ 
-        "Si", 
-        "No"
-    ]
-}
-
-/* 15 */
-{
-    "_id" : ObjectId("574110b1ae758c6d8460d470"),
-    "category" : [ 
-        "Si", 
-        "No"
-    ],
-    "socialId" : "734132784072163328",
-    "name" : "#AnotaPenalCristianoRonaldo",
     "closed" : false,
     "live" : "60000",
     "options" : [ 
