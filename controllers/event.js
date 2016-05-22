@@ -7,6 +7,11 @@ var Controller = function() {};
 
 Controller.prototype.getEvents = function(req, res) {
   var date = Date.now();
+  var data = [];
+  var countObj = {
+    win: 0,
+    lose: 0
+  };
   EventModel.find({
     created_at: {
       $gte: date - 15
@@ -16,12 +21,20 @@ Controller.prototype.getEvents = function(req, res) {
     if (err) {
       return res.status(400).json(err);
     } else {
-      var results = [];
-      getBetCount('', function(key, length, result){
-        if (key == (length-1)) {
+      NotificationModel.find(function(err, not){
+        if (not.length) {
+          getBetCount('', function(key, length, result){
+            if (key == (length-1)) {
+              return res.status(200).json({
+                data: data,
+                count: result
+              });
+            }
+          });
+        }else {
           return res.status(200).json({
             data: data,
-            count: result
+            count: countObj
           });
         }
       });
