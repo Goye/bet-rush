@@ -3,21 +3,19 @@ import json
 
 client = MongoClient('localhost', 27017)
 db = client.betrush
-events = db.events
+events = db.event
 
 def process_event(status):
 	#TODO delete this comment	
 	#status = json.loads(status)
 	event = {}
-	event['tweet_id'] = status["id"]
-	print "before Mongo: ", event
+	event['socialId'] = str(status["id"])
 	kind, additions = filter_status(status)
 	if kind == 'open':
 		event.update(additions)
 		create_event(event)
 	elif kind == 'closed':
 		close_event(additions)
-	print "After Mongo: ", event
 
 
 def create_event(event):
@@ -27,7 +25,8 @@ def create_event(event):
 def close_event(winning_options):
 	write_results = events.update_one({'tweet_id': winning_options['original_id']},{
 		'$set': {
-			'results': winning_options['results']
+			'results': winning_options['results'],
+			'closed': True
 		}})
 
 	print("Event successfully updated: {}".format(write_results))
@@ -40,11 +39,14 @@ def filter_status(status):
 	if tag_location != -1:
 		kind = "open"
 		category, event, options = tweet[tag_location + len(open_bet):].split()
+		category = options.split('-')
 		options = options.split('-')
 		return kind, {
 			'category':category,
-			'event':event,
-			'options':options
+			'name':event,
+			'options':options,
+			'live': "60000",
+			'closed': False
 		}
 
 	tag_location = tweet.find(close_bet)
