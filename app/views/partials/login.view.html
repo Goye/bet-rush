@@ -32,18 +32,18 @@
       </div>
     </div>
   </div>
-
-  <div class="col-sm-12">
+  
+  <div class="col-sm-12" ng-repeat="card in vm.data">
     <div class="thumbnail">
       <div class="header">
-        <span class="label">Sports</span>
+        <span class="label">{{card.category[0]}}</span>
         <span class="glyphicon glyphicon-minus cant-minus"></span>
         <span class="cant">10</span>
         <span class="glyphicon glyphicon-plus cant-plus"></span>
         <span class="glyphicon glyphicon-remove-circle pull-right"></span>
       </div>
       <div class="caption">
-        <p class="bet-text">¿Atletico Nacional Clasifica a la semifinal de la Copa Libertadores de America?</p>
+        <p class="bet-text">{{card.name}}</p>
       </div>
       <p><a href="#" class="btn btn-success btn-semi btn-semi-left" role="button">SI</a> <a href="#" class="btn btn-danger btn-semi btn-semi-right" role="button">NO</a></p>
     </div>

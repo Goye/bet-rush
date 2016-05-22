@@ -5,11 +5,11 @@
 
   function LoginCtrl($scope, ResourceFactory, $window, $http) {
     var vm = this;
-    vm.data = {};
+    vm.data = [];
     vm.event = ResourceFactory.rest('/api/get/events');
     vm.event.query({}, function(data){
       console.log(data);
-      //vm.data = data;
+      vm.data = data;
     });
   }
 }());
