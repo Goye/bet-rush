@@ -14,13 +14,13 @@
       $timeout(function(){
         vm.data = [];
         getCards();
-      }, 5000);
+      }, 10000);
     }
     function getCards() {
       vm.event.query({}, function(data){
         console.log(data);
         vm.data = data;
-        //checkTime();
+        checkTime();
       });
     }
 
@@ -37,9 +37,12 @@
       }
     }
     vm.closeCard = function(card) {
-      console.log('close')
+      console.log('close', card)
+      card.close = true;
       var pos = vm.data.indexOf(card);
-      vm.data.splice(pos, 1);
+      $timeout(function() {
+        vm.data.splice(pos, 1);
+      }, 500)
     }
 
     vm.sendAnswer = function(card, option) {

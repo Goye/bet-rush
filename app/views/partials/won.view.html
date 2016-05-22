@@ -1,0 +1,47 @@
+<nav class="navigation">
+  <span class="btn btn-success pull-left" ng-click="vm.newBet()">add bet</span>
+  Bet Rush
+  <div class="coins pull-right">
+    $1200
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+  <div class="col-sm-12 won">
+    <div class="thumbnail">
+      <!-- <div class="header">
+        FELICITACIONES!
+        <span class="glyphicon glyphicon-remove-circle pull-right"></span>
+      </div> -->
+      <div class="caption">
+        <p class="bet-text">¿Atletico Nacional Clasifica a la semifinal de la Copa Libertadores de America?</p>
+        <p class="bet-text">Si, ganaste <span class="cant-won">$10</span></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<nav class="navigation-footer">
+  <div class="col-sm-3">
+    <a ui-sref="/">
+      <span class="glyphicon glyphicon-home"></span>
+    </a>
+  </div>
+  <div class="col-sm-3">
+    <a ui-sref="wonBet">
+      <span class="notification notification--won">99</span>
+      <span class="glyphicon glyphicon-thumbs-up"></span>
+    </a>
+  </div>
+  <div class="col-sm-3">
+    <a ui-sref="loseBet">
+      <span class="notification notification--lose">99</span>
+      <span class="glyphicon glyphicon-thumbs-down"></span>
+    </a>
+  </div>
+  <div class="col-sm-3">
+    <span class="glyphicon glyphicon-user"></span>
+  </div>
+</nav>

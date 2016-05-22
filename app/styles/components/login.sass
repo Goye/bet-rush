@@ -17,6 +17,10 @@
   left: 0
   z-index: 10
 
+.col-sm-12
+  &.closing
+    animation: closing 0.5s linear
+
 .won
   color: #fff
   .thumbnail
@@ -28,6 +32,8 @@
     background: #5cb85c
   .header
     font-size: 20px
+  .bet-text
+    padding: 0
   .cant-won
     font-size: 20px
 
@@ -42,6 +48,8 @@
     background: #d9534f
   .header
     font-size: 20px
+  .bet-text
+    padding: 0
   // .cant-lose
   //   font-size: 10px
 
@@ -57,7 +65,7 @@
   height: 3px
   width: 40px
   background: #d9534f
-  animation: timer 5s linear
+  animation: timer 10s linear
 
 .cant
   font-size: 25px
@@ -103,8 +111,49 @@ p
 .sendBet
   width: 100%
 
+.navigation-footer
+  background: #fff
+  clear: both
+  overflow: hidden
+  position: fixed
+  bottom: 0
+  left: 0
+  height: 50px
+  width: 100%
+  z-index: 10
+  border-top: 1px solid #ccc
+
+
+.col-sm-3
+  width: 25%;
+  float: left
+
+.glyphicon-thumbs-up, .glyphicon-thumbs-down, .glyphicon-user, .glyphicon-home
+  font-size: 25px
+  line-height: 50px
+
+.notification
+  color: #fff
+  height: 20px
+  border-radius: 10px
+  position: absolute
+  top: 10px
+  right: 20px
+  text-align: center
+  padding: 0 5px;
+
+  &--won
+    background: #5cb85c
+  &--lose
+    background: #d9534f
+
 @keyframes timer
   0%
     width: 0px
   100%
     width: 100%
+@keyframes closing
+  0%
+    opacity: 1
+  100%
+    opacity: 0

@@ -37,7 +37,7 @@ def close_event(winning_options):
 				'closed': True
 			}})
 
-		not_id = notifications.insert_one({"event_id": obj_id}).inserted_id
+		not_id = notifications.insert_one({"eventId": obj_id}).inserted_id
 
 		print("Event successfully updated: {} \n Notification: {}".format(write_results, not_id))
 	
