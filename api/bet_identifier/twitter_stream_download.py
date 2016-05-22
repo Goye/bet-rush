@@ -19,10 +19,10 @@ class MyListener(StreamListener):
     def on_data(self, data):
         try:
             mongo_writer.process_event(data)
-            with open(self.outfile, 'a') as f:
-                f.write(data)
-                print(data)
-                return True
+            #with open(self.outfile, 'a') as f:
+            #    f.write(data)
+            #    print(data)
+            return True
         except BaseException as e:
             print("Error on_data: %s" % str(e))
             time.sleep(5)
