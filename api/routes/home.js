@@ -1,1 +1,0 @@
-var controllers = require('../controllers');

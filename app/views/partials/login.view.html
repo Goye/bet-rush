@@ -1,0 +1,56 @@
+<nav class="navigation">
+  <span class="btn btn-success pull-left">add bet</span>
+  Bet Rush
+  <div class="coins pull-right">
+    $1200
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+  <div class="col-sm-12 won">
+    <div class="thumbnail">
+      <div class="header">
+        FELICITACIONES!
+        <span class="glyphicon glyphicon-remove-circle pull-right"></span>
+      </div>
+      <div class="caption">
+        <p class="bet-text">¿Atletico Nacional Clasifica a la semifinal de la Copa Libertadores de America?</p>
+        <p class="bet-text">Si, ganaste <span class="cant-won">$10</span></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-12 lose">
+    <div class="thumbnail">
+      <div class="header">
+        LO SIENTO!
+        <span class="glyphicon glyphicon-remove-circle pull-right"></span>
+      </div>
+      <div class="caption">
+        <p class="bet-text">¿Atletico Nacional Clasifica a la semifinal de la Copa Libertadores de America?</p>
+        <p class="bet-text">Si, perdiste <span class="cant-lose">$10</span></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-12" ng-repeat="card in vm.data">
+    <div class="thumbnail">
+      <div class="header">
+        <span class="label">{{card.category[0]}}</span>
+        <span class="glyphicon glyphicon-minus cant-minus" ng-click="vm.minus(card)"></span>
+        <span class="cant">${{card.cant}}</span>
+        <span class="glyphicon glyphicon-plus cant-plus" ng-click="vm.add(card)"></span>
+        <span class="glyphicon glyphicon-remove-circle pull-right" ng-click="vm.closeCard(card)"></span>
+      </div>
+      <div class="timer"></div>
+      <div class="caption">
+        <p class="bet-text">{{card.name}}</p>
+      </div>
+      <p>
+      <a href="#" class="btn btn-semi" ng-class="$index ? 'btn-danger btn-semi-right': 'btn-success btn-semi-left'" role="button" ng-repeat="opt in card.options" ng-click="vm.sendAnswer(card, opt)">{{opt}}</a>
+        <!-- <a href="#" class="btn btn-success btn-semi btn-semi-left" role="button" ng-click="vm.sendAnswer(card, 'yes')">SI</a>
+        <a href="#" class="btn btn-danger btn-semi btn-semi-right" role="button" ng-click="vm.sendAnswer(card, 'no')">NO</a></p> -->
+    </div>
+
+</div>
+</div>
