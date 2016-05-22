@@ -1,6 +1,7 @@
 from pymongo import MongoClient
 import json
 import categories
+import time
 
 client = MongoClient('localhost', 27017)
 db = client.betrush
@@ -52,6 +53,7 @@ def filter_status(status):
 		category = [categories.abbr.get(x) for x in category.split('-')]
 		options = options.split('-')
 		return kind, {
+			'createdAt': time.time(),
 			'category':category,
 			'name':event,
 			'options':options,

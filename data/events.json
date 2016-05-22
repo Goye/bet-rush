@@ -1,0 +1,440 @@
+/* 1 */
+{
+    "_id" : ObjectId("574137b0ae758c7f6c1c134b"),
+    "category" : [ 
+        "Television", 
+        "The Simpsons"
+    ],
+    "socialId" : "734241892125278208",
+    "name" : "#VuelvenLosSimpsonsEnCaracol",
+    "closed" : false,
+    "live" : "60000",
+    "options" : [ 
+        "Si", 
+        "No"
+    ]
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("574137c0ae758c7f6c1c134c"),
+    "category" : [ 
+        "Hackathon"
+    ],
+    "socialId" : "734241980260220929",
+    "name" : "#BetRushGanaAngelHack",
+    "closed" : false,
+    "live" : "60000",
+    "options" : [ 
+        "Si", 
+        "No"
+    ]
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("574137cbae758c7f6c1c134d"),
+    "category" : [ 
+        "futbol", 
+        "UEFA Champions"
+    ],
+    "socialId" : "734242024120037376",
+    "name" : "#AnotaPenalCristianoRonaldo",
+    "closed" : false,
+    "live" : "60000",
+    "options" : [ 
+        "Si", 
+        "No"
+    ]
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("574137d5ae758c7f6c1c134e"),
+    "category" : [ 
+        "futbol", 
+        "Copa Libertadores"
+    ],
+    "socialId" : "734242067841486848",
+    "name" : "#HayPeleaNacionalRosarioCentral",
+    "closed" : false,
+    "live" : "60000",
+    "options" : [ 
+        "Si", 
+        "No"
+    ]
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("574137dfae758c7f6c1c134f"),
+    "category" : [ 
+        "Cine"
+    ],
+    "socialId" : "734242111499997186",
+    "name" : "#GanaCapitanAmericaOIronMan",
+    "closed" : false,
+    "live" : "60000",
+    "options" : [ 
+        "capitan", 
+        "ironman"
+    ]
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("5741381cae758c7f6c1c1350"),
+    "category" : [ 
+        "futbol", 
+        "Copa Libertadores"
+    ],
+    "socialId" : "734242367344152576",
+    "name" : "#HayPeleaNacionalRosarioCentral",
+    "closed" : false,
+    "live" : "60000",
+    "options" : [ 
+        "Si", 
+        "No"
+    ]
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("57413827ae758c7f6c1c1351"),
+    "category" : [ 
+        "Cine"
+    ],
+    "socialId" : "734242412013457408",
+    "name" : "#GanaCapitanAmericaOIronMan",
+    "closed" : false,
+    "live" : "60000",
+    "options" : [ 
+        "capitan", 
+        "ironman"
+    ]
+}
+
+/* 8 */
+{
+    "_id" : ObjectId("57413831ae758c7f6c1c1352"),
+    "category" : [ 
+        "Television", 
+        "The Simpsons"
+    ],
+    "socialId" : "734242455458091008",
+    "name" : "#VuelvenLosSimpsonsEnCaracol",
+    "closed" : false,
+    "live" : "60000",
+    "options" : [ 
+        "Si", 
+        "No"
+    ]
+}
+
+/* 9 */
+{
+    "_id" : ObjectId("57413846ae758c7f6c1c1353"),
+    "category" : [ 
+        "Hackathon"
+    ],
+    "socialId" : "734242543001571328",
+    "name" : "#BetRushGanaAngelHack",
+    "closed" : false,
+    "live" : "60000",
+    "options" : [ 
+        "Si", 
+        "No"
+    ]
+}
+
+/* 10 */
+{
+    "_id" : ObjectId("57413b58ae758c03cca45d8b"),
+    "category" : [ 
+        "futbol", 
+        "UEFA Champions"
+    ],
+    "socialId" : "734245818736214016",
+    "name" : "#AnotaPenalCristianoRonaldo",
+    "closed" : false,
+    "live" : "60000",
+    "options" : [ 
+        "Si", 
+        "No"
+    ]
+}
+
+/* 11 */
+{
+    "_id" : ObjectId("57413b80ae758c03cca45d8c"),
+    "category" : [ 
+        "futbol", 
+        "Copa Libertadores"
+    ],
+    "socialId" : "734246005600858112",
+    "name" : "#HayPeleaNacionalRosarioCentral",
+    "closed" : false,
+    "live" : "60000",
+    "options" : [ 
+        "Si", 
+        "No"
+    ]
+}
+
+/* 12 */
+{
+    "_id" : ObjectId("57413befae758c0420f73b8c"),
+    "category" : [ 
+        "futbol", 
+        "Copa Libertadores"
+    ],
+    "socialId" : "734246451509919744",
+    "name" : "#HayPeleaNacionalRosarioCentral",
+    "closed" : true,
+    "live" : "60000",
+    "options" : [ 
+        "Si", 
+        "No"
+    ],
+    "results" : [ 
+        "Si"
+    ]
+}
+
+/* 13 */
+{
+    "_id" : ObjectId("57413c15ae758c0420f73b8e"),
+    "category" : [ 
+        "Cine"
+    ],
+    "socialId" : "734246624243908610",
+    "name" : "#GanaCapitanAmericaOIronMan",
+    "closed" : false,
+    "live" : "60000",
+    "options" : [ 
+        "capitan", 
+        "ironman"
+    ]
+}
+
+/* 14 */
+{
+    "_id" : ObjectId("57416a48ae758c0ef51e5760"),
+    "category" : [ 
+        "futbol", 
+        "Copa Libertadores"
+    ],
+    "socialId" : "734296216406794240",
+    "name" : "#HayPeleaNacionalRosarioCentral",
+    "closed" : true,
+    "live" : "60000",
+    "createdAt" : 1463904840.45052,
+    "options" : [ 
+        "Si", 
+        "No"
+    ],
+    "results" : [ 
+        "Si"
+    ]
+}
+
+/* 15 */
+{
+    "_id" : ObjectId("57416a60ae758c0ef51e5762"),
+    "category" : [ 
+        "Cine"
+    ],
+    "socialId" : "734296338653908992",
+    "name" : "#GanaCapitanAmericaOIronMan",
+    "closed" : true,
+    "live" : "60000",
+    "createdAt" : 1463904864.77524,
+    "options" : [ 
+        "capitan", 
+        "ironman"
+    ],
+    "results" : [ 
+        "capitan"
+    ]
+}
+
+/* 16 */
+{
+    "_id" : ObjectId("57416a66ae758c0ef51e5763"),
+    "category" : [ 
+        "Television", 
+        "The Simpsons"
+    ],
+    "socialId" : "734296361366065156",
+    "name" : "#VuelvenLosSimpsonsEnCaracol",
+    "closed" : true,
+    "live" : "60000",
+    "createdAt" : 1463904870.16024,
+    "options" : [ 
+        "Si", 
+        "No"
+    ],
+    "results" : [ 
+        "Si"
+    ]
+}
+
+/* 17 */
+{
+    "_id" : ObjectId("57416a71ae758c0ef51e5765"),
+    "category" : [ 
+        "Hackathon"
+    ],
+    "socialId" : "734296406748450816",
+    "name" : "#BetRushGanaAngelHack",
+    "closed" : true,
+    "live" : "60000",
+    "createdAt" : 1463904881.05437,
+    "options" : [ 
+        "Si", 
+        "No"
+    ],
+    "results" : [ 
+        "Si"
+    ]
+}
+
+/* 18 */
+{
+    "_id" : ObjectId("57416a81ae758c0ef51e5768"),
+    "category" : [ 
+        null
+    ],
+    "socialId" : "734296475837038592",
+    "name" : "#JhonCalzonesRecibiraUnAumento",
+    "closed" : true,
+    "live" : "60000",
+    "createdAt" : 1463904897.29899,
+    "options" : [ 
+        "Si", 
+        "No"
+    ],
+    "results" : [ 
+        "No"
+    ]
+}
+
+/* 19 */
+{
+    "_id" : ObjectId("57416a8dae758c0ef51e576a"),
+    "category" : [ 
+        "futbol", 
+        "UEFA Champions"
+    ],
+    "socialId" : "734296522360250368",
+    "name" : "#AnotaPenalCristianoRonaldo",
+    "closed" : true,
+    "live" : "60000",
+    "createdAt" : 1463904909.01555,
+    "options" : [ 
+        "Si", 
+        "No"
+    ],
+    "results" : [ 
+        "No"
+    ]
+}
+
+/* 20 */
+{
+    "_id" : ObjectId("57416a92ae758c0ef51e576b"),
+    "category" : [ 
+        "futbol", 
+        "Copa Libertadores"
+    ],
+    "socialId" : "734296545726717952",
+    "name" : "#HayPeleaNacionalRosarioCentral",
+    "closed" : true,
+    "live" : "60000",
+    "createdAt" : 1463904914.23264,
+    "options" : [ 
+        "Si", 
+        "No"
+    ],
+    "results" : [ 
+        "Si"
+    ]
+}
+
+/* 21 */
+{
+    "_id" : ObjectId("57416aa2ae758c0ef51e576e"),
+    "category" : [ 
+        "Cine"
+    ],
+    "socialId" : "734296615641448448",
+    "name" : "#GanaCapitanAmericaOIronMan",
+    "closed" : true,
+    "live" : "60000",
+    "createdAt" : 1463904930.82268,
+    "options" : [ 
+        "capitan", 
+        "ironman"
+    ],
+    "results" : [ 
+        "capitan"
+    ]
+}
+
+/* 22 */
+{
+    "_id" : ObjectId("57416aadae758c0ef51e5770"),
+    "category" : [ 
+        "Television", 
+        "The Simpsons"
+    ],
+    "socialId" : "734296661300805632",
+    "name" : "#VuelvenLosSimpsonsEnCaracol",
+    "closed" : true,
+    "live" : "60000",
+    "createdAt" : 1463904941.6884,
+    "options" : [ 
+        "Si", 
+        "No"
+    ],
+    "results" : [ 
+        "Si"
+    ]
+}
+
+/* 23 */
+{
+    "_id" : ObjectId("57416ab8ae758c0ef51e5772"),
+    "category" : [ 
+        "Hackathon"
+    ],
+    "socialId" : "734296707211636736",
+    "name" : "#BetRushGanaAngelHack",
+    "closed" : true,
+    "live" : "60000",
+    "createdAt" : 1463904952.45878,
+    "options" : [ 
+        "Si", 
+        "No"
+    ],
+    "results" : [ 
+        "Si"
+    ]
+}
+
+/* 24 */
+{
+    "_id" : ObjectId("57416ac3ae758c0ef51e5774"),
+    "category" : [ 
+        null
+    ],
+    "socialId" : "734296752866623488",
+    "name" : "#JhonCalzonesRecibiraUnAumento",
+    "closed" : false,
+    "live" : "60000",
+    "createdAt" : 1463904963.59488,
+    "options" : [ 
+        "Si", 
+        "No"
+    ]
+}   
