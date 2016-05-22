@@ -53,7 +53,7 @@ def filter_status(status):
 		category = [categories.abbr.get(x) for x in category.split('-')]
 		options = options.split('-')
 		return kind, {
-			'createdAt': time.time()
+			'createdAt': time.time(),
 			'category':category,
 			'name':event,
 			'options':options,
