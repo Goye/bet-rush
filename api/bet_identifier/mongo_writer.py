@@ -7,7 +7,7 @@ events = db.event
 
 def process_event(status):
 	#TODO delete this comment	
-	#status = json.loads(status)
+	status = json.loads(status)
 	event = {}
 	event['socialId'] = str(status["id"])
 	kind, additions = filter_status(status)

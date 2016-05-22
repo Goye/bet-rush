@@ -72,10 +72,10 @@ if __name__ == '__main__':
     api = tweepy.API(auth)
 
     #TODO delete this comment
-    #twitter_stream = Stream(auth, MyListener(config.directory, '-'))
-    #twitter_stream.userstream(_with='user')
+    twitter_stream = Stream(auth, MyListener(config.directory, '-'))
+    twitter_stream.userstream(_with='user')
 
     #TODO delete this code
-    for tweet in tweepy.Cursor(api.user_timeline).items():
-        mongo_writer.process_event(tweet._json)
+    #for tweet in tweepy.Cursor(api.user_timeline).items():
+    #    mongo_writer.process_event(tweet._json)
         
