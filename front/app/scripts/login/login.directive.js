@@ -1,6 +1,6 @@
 (function() {
   angular
-  .module('prodigi.login')
+  .module('betrush.login')
   .directive('login', login);
 
   function login() {

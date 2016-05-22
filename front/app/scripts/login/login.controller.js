@@ -1,20 +1,15 @@
 (function() {
   angular
-    .module('prodigi.login')
+    .module('betrush.login')
     .controller('LoginCtrl', LoginCtrl);
 
   function LoginCtrl($scope, ResourceFactory, $window, $http) {
     var vm = this;
     vm.data = {};
-    vm.event = ResourceFactory.rest('/login');
-    vm.login = function(){
-      $http.get('localhost:8080/api/hola')
-      .success(function(data) {
-        console.log('hola')
-      })
-      .error(function() {
-        console.log('error');
-      })
-    };
+    vm.event = ResourceFactory.rest('/api/get/events');
+    vm.event.query({}, function(data){
+      console.log(data);
+      //vm.data = data;
+    });
   }
 }());

@@ -1,6 +1,6 @@
 (function() {
   angular
-    .module('prodigi.header')
+    .module('betrush.header')
     .factory('HeaderFactory', HeaderFactory);
 
   function HeaderFactory() {

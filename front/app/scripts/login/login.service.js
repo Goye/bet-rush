@@ -1,6 +1,6 @@
 (function() {
 	angular
-		.module('prodigi.login')
+		.module('betrush.login')
 		.factory('LoginFactory', LoginFactory);
 
 	function LoginFactory($q,$window) {

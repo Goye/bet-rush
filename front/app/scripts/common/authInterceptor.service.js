@@ -1,6 +1,6 @@
 (function() {
   angular
-  .module('prodigi.common')
+  .module('betrush.common')
   .factory('authInterceptor', authInterceptor);
 
   function authInterceptor($window) {

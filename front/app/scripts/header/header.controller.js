@@ -1,6 +1,6 @@
 (function() {
   angular
-  .module('prodigi.header')
+  .module('betrush.header')
   .controller('HeaderCtrl', HeaderCtrl);
 
   function HeaderCtrl(HeaderFactory) {

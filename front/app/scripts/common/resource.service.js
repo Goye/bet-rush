@@ -1,6 +1,6 @@
 (function() {
   angular
-  .module('prodigi.common')
+  .module('betrush.common')
   .factory('ResourceFactory', ResourceFactory);
 
   function ResourceFactory($resource) {
@@ -9,7 +9,7 @@
         return $resource(url, params, {
           get: {
             method: 'GET',
-            cancellable: true
+            cancellable: true,
           },
           query: {
             method: 'GET',

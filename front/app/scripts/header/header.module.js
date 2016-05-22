@@ -1,3 +1,3 @@
 (function() {
-  angular.module('prodigi.header', []);
+  angular.module('betrush.header', []);
 }());

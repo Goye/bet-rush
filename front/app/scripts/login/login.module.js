@@ -1,3 +1,3 @@
 (function() {
-  angular.module('prodigi.login', ['prodigi.common']);
+  angular.module('betrush.login', ['betrush.common']);
 }());

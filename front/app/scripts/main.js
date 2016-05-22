@@ -1,7 +1,7 @@
 (function() {
   angular.module('betrush', [
-    'prodigi.header',
-    'prodigi.login',
+    'betrush.header',
+    'betrush.login',
     'ui.router',
     'textAngular'
   ]).config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
