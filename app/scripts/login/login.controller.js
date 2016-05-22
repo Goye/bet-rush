@@ -15,7 +15,7 @@
       $timeout(function(){
         vm.data = [];
         getCards();
-      }, 7000);
+      }, 4000);
     }
     function getCards() {
       vm.event.get({}, function(res){
