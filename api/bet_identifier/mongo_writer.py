@@ -1,5 +1,6 @@
 from pymongo import MongoClient
 import json
+import categories
 
 client = MongoClient('localhost', 27017)
 db = client.betrush
@@ -39,7 +40,7 @@ def filter_status(status):
 	if tag_location != -1:
 		kind = "open"
 		category, event, options = tweet[tag_location + len(open_bet):].split()
-		category = options.split('-')
+		category = [categories.abbr.get(x) for x in category.split('-')]
 		options = options.split('-')
 		return kind, {
 			'category':category,
