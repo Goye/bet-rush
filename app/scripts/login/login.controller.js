@@ -3,7 +3,7 @@
     .module('betrush.login')
     .controller('LoginCtrl', LoginCtrl);
 
-  function LoginCtrl($scope, ResourceFactory, $window, $http, $timeout) {
+  function LoginCtrl($scope, ResourceFactory, $window, $http, $timeout, $state) {
     var vm = this;
     vm.data = [];
     vm.event = ResourceFactory.rest('/api/get/events');
@@ -22,6 +22,10 @@
         vm.data = data;
         //checkTime();
       });
+    }
+
+    vm.newBet = function() {
+      $state.go('newBet');
     }
 
     vm.add = function(card) {

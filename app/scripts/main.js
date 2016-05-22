@@ -2,6 +2,7 @@
   angular.module('betrush', [
     'betrush.header',
     'betrush.login',
+    'betrush.bet',
     'ui.router',
     'textAngular'
   ]).config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
@@ -16,6 +17,16 @@
             content: {
               templateUrl: '/views/partials/login.view.html',
               controller: 'LoginCtrl',
+              controllerAs: 'vm'
+            }
+          }
+        })
+        .state('newBet', {
+          url: '/newBet',
+          views: {
+            content: {
+              templateUrl: '/views/partials/newbet.view.html',
+              controller: 'NewBetCtrl',
               controllerAs: 'vm'
             }
           }
