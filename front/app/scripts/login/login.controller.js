@@ -3,19 +3,18 @@
     .module('prodigi.login')
     .controller('LoginCtrl', LoginCtrl);
 
-  function LoginCtrl($scope, ResourceFactory, $window) {
+  function LoginCtrl($scope, ResourceFactory, $window, $http) {
     var vm = this;
     vm.data = {};
     vm.event = ResourceFactory.rest('/login');
     vm.login = function(){
-      vm.errorMessage = '';
-      vm.event.save(vm.data, function(res){
-        $window.localStorage.setItem('user', JSON.stringify(res));
-        $window.location = '/admin/events';
-      },function(err){
-        $window.localStorage.removeItem('user');
-        vm.errorMessage = err.data.message;
-      });
+      $http.get('localhost:8080/api/hola')
+      .success(function(data) {
+        console.log('hola')
+      })
+      .error(function() {
+        console.log('error');
+      })
     };
   }
 }());
