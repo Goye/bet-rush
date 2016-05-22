@@ -29,6 +29,10 @@ var eventSchema = new schema({
         type: Boolean,
         default: false
     },
+    cant: {
+        type: Number,
+        default: 10
+    },
     createdAt: {
         type: Date,
         default: Date.now
