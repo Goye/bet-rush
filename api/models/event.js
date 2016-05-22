@@ -2,16 +2,18 @@ var mongoose = require('mongoose');
 var schema = mongoose.Schema;
 
 var eventSchema = new schema({
+    category: {
+        type: Array
+    },
+    socialId: {
+        type: String
+    },
     name: {
         type: String,
         required: true
     },
-    category: [{
-        type: mongoose.Schema.Types.ObjectId, 
-        ref: 'preference'
-    }],
     live: {
-        type: Date,
+        type: Number,
     },
     options: {
         type: Array
@@ -19,13 +21,13 @@ var eventSchema = new schema({
     results: {
         type: Array
     },
-    bets: [{
-        type: mongoose.Schema.Types.ObjectId, 
-        ref: 'bet'
-    }],
+    // bets: [{
+    //     type: mongoose.Schema.Types.ObjectId, 
+    //     ref: 'bet'
+    // }],
     closed: {
         type: Boolean,
-        default: true
+        default: false
     },
     createdAt: {
         type: Date,
@@ -34,4 +36,4 @@ var eventSchema = new schema({
     updateAt: Date
 });
 
-module.exports = mongoose.model('user', eventSchema);
+module.exports = mongoose.model('events', eventSchema);
