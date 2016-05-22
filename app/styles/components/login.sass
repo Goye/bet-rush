@@ -1,15 +1,49 @@
 .ta-hidden-input
   display: none
 .container
-  margin-top: 10px
+  margin-top: 70px
 
 .navigation
+  background: #fff
   clear: both
   overflow: hidden
   text-align: center
   padding: 7px 5px
   font-size: 18px
   border-bottom: 1px solid #ccc
+  width: 100%
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 10
+
+.won
+  color: #fff
+  .thumbnail
+    border: 1px solid #5cb85c
+  .glyphicon-remove-circle
+    color: #fff
+  .header, .caption
+    color: #fff
+    background: #5cb85c
+  .header
+    font-size: 20px
+  .cant-won
+    font-size: 20px
+
+.lose
+  color: #fff
+  .thumbnail
+    border: 1px solid #d9534f
+  .glyphicon-remove-circle
+    color: #fff
+  .header, .caption
+    color: #fff
+    background: #d9534f
+  .header
+    font-size: 20px
+  // .cant-lose
+  //   font-size: 10px
 
 .header
   clear: both
@@ -17,6 +51,15 @@
   border-bottom: 1px solid #ccc
   padding: 5px
   position: relative
+  text-align: center
+
+.cant
+  font-size: 25px
+  color: #5bc0de
+  margin: 0 10px
+
+  &-plus, &-minus
+    font-size: 18px
 
 .label
   position: absolute
