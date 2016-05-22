@@ -6,10 +6,10 @@ var betSchema = new schema({
         type: Number,
         required: true
     },
-    events: [{
+    event: {
         type: mongoose.Schema.Types.ObjectId, 
         ref: 'event'
-    }],
+    },
     // user: [{
     //     type: mongoose.Schema.Types.ObjectId, 
     //     ref: 'user'
