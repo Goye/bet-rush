@@ -6,6 +6,7 @@
   function LoginCtrl($scope, ResourceFactory, $window, $http, $timeout, $state) {
     var vm = this;
     vm.data = [];
+    vm.count = {};
     vm.event = ResourceFactory.rest('/api/get/events');
     getCards();
 
@@ -17,9 +18,10 @@
       }, 10000);
     }
     function getCards() {
-      vm.event.query({}, function(data){
-        console.log(data);
-        vm.data = data;
+      vm.event.get({}, function(res){
+        console.log(res);
+        vm.data = res.data;
+        vm.count = res.count;
         checkTime();
       });
     }
@@ -42,7 +44,7 @@
       var pos = vm.data.indexOf(card);
       $timeout(function() {
         vm.data.splice(pos, 1);
-      }, 500)
+      }, 300)
     }
 
     vm.sendAnswer = function(card, option) {

@@ -13,10 +13,10 @@ Controller.prototype.getEvents = function(req, res) {
     lose: 0
   };
   EventModel.find({
-    created_at: {
-      $gte: date - 15
-    },
-    closed: false,
+    // created_at: {
+    //   $gte: date - 15
+    // },
+    // closed: false,
   }, function(err, data){
     if (err) {
       return res.status(400).json(err);

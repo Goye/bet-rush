@@ -32,13 +32,13 @@
   </div>
   <div class="col-sm-3">
     <a ui-sref="wonBet">
-      <span class="notification notification--won">99</span>
+      <span class="notification notification--won" ng-if="vm.count.win">{{vm.count.win}}</span>
       <span class="glyphicon glyphicon-thumbs-up"></span>
     </a>
   </div>
   <div class="col-sm-3">
     <a ui-sref="loseBet">
-      <span class="notification notification--lose">99</span>
+      <span class="notification notification--lose" ng-if="vm.count.lose">{{vm.count.lose}}</span>
       <span class="glyphicon glyphicon-thumbs-down"></span>
     </a>
   </div>
