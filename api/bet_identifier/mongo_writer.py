@@ -5,6 +5,7 @@ import categories
 client = MongoClient('localhost', 27017)
 db = client.betrush
 events = db.event
+notifications = db.notification
 
 def process_event(status):
 	#TODO delete this comment	
@@ -24,13 +25,20 @@ def create_event(event):
 	print("Event successfully entered in db with id {}".format(event_id))
 
 def close_event(winning_options):
-	write_results = events.update_one({'tweet_id': winning_options['original_id']},{
-		'$set': {
-			'results': winning_options['results'],
-			'closed': True
-		}})
+	event = events.find_one({'socialId': winning_options['original_id']})
+	print event
+	if(event):
+		obj_id = event['_id']
 
-	print("Event successfully updated: {}".format(write_results))
+		write_results = events.update_one({"_id": obj_id},{
+			'$set': {
+				'results': winning_options['results'],
+				'closed': True
+			}})
+
+		not_id = notifications.insert_one({"event_id": obj_id}).inserted_id
+
+		print("Event successfully updated: {} \n Notification: {}".format(write_results, not_id))
 	
 def filter_status(status):
 	tweet = status["text"]
