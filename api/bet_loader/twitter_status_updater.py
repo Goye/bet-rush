@@ -14,7 +14,6 @@ if __name__ == '__main__':
     
     api = tweepy.API(auth)
 
-    #tweet = api.update_status(status='Updating using OAuth authentication via Tweepy!')
     with open(config.filename) as f:
         content = f.readlines()
 
@@ -24,7 +23,7 @@ if __name__ == '__main__':
     while (True):
         prob = random.uniform(0.0, 1.0)
 
-        millis = str(int(round(time.time() * 1000)))[-4:]
+        millis = str(int(round(time.time() * 1000)))[-5:]
         
         if prob < 0.6:
             event_count = (event_count + 1) %len(content)
