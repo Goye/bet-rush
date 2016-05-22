@@ -8,30 +8,7 @@
 
 <div class="container">
   <div class="row">
-  <!-- <div class="col-sm-12 won">
-    <div class="thumbnail">
-      <div class="header">
-        FELICITACIONES!
-        <span class="glyphicon glyphicon-remove-circle pull-right"></span>
-      </div>
-      <div class="caption">
-        <p class="bet-text">¿Atletico Nacional Clasifica a la semifinal de la Copa Libertadores de America?</p>
-        <p class="bet-text">Si, ganaste <span class="cant-won">$10</span></p>
-      </div>
-    </div>
-  </div> -->
-  <!-- <div class="col-sm-12 lose">
-    <div class="thumbnail">
-      <div class="header">
-        LO SIENTO!
-        <span class="glyphicon glyphicon-remove-circle pull-right"></span>
-      </div>
-      <div class="caption">
-        <p class="bet-text">¿Atletico Nacional Clasifica a la semifinal de la Copa Libertadores de America?</p>
-        <p class="bet-text">Si, perdiste <span class="cant-lose">$10</span></p>
-      </div>
-    </div>
-  </div> -->
+
 
   <div class="col-sm-12" ng-class="{'closing': card.close}" ng-repeat="card in vm.data">
     <div class="thumbnail">
@@ -45,12 +22,9 @@
       <div class="timer"></div>
       <div class="caption">
         <p class="bet-text">{{card.name}}</p>
-        <p class="bet-text">{{card.close}}</p>
       </div>
       <p>
       <a href="#" class="btn btn-semi" ng-class="$index ? 'btn-danger btn-semi-right': 'btn-success btn-semi-left'" role="button" ng-repeat="opt in card.options" ng-click="vm.sendAnswer(card, opt)">{{opt}}</a>
-        <!-- <a href="#" class="btn btn-success btn-semi btn-semi-left" role="button" ng-click="vm.sendAnswer(card, 'yes')">SI</a>
-        <a href="#" class="btn btn-danger btn-semi btn-semi-right" role="button" ng-click="vm.sendAnswer(card, 'no')">NO</a></p> -->
     </div>
 
 </div>

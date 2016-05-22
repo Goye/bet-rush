@@ -23,6 +23,10 @@
       });
     }
 
+    vm.newBet = function() {
+      $state.go('newBet');
+    }
+
     vm.sendBet = function(bet) {
       console.log('new bet', bet);
       $http.post('/api/new/event', bet)

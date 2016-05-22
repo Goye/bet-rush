@@ -21,6 +21,9 @@
         vm.count = res.count;
       });
     }
+    vm.newBet = function() {
+      $state.go('newBet');
+    }
 
     vm.sendBet = function(bet) {
       console.log('new bet', bet);
