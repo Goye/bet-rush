@@ -23,4 +23,4 @@ var preferenceSchema = new schema({
     updateAt: Date
 });
 
-module.exports = mongoose.model('preference', preferenceSchema);
+module.exports = mongoose.model('preferences', preferenceSchema);

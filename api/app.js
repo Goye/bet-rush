@@ -6,7 +6,6 @@ var routes = require('./routes');
 var bodyParser = require('body-parser');
 var app = express();
 var passport = require('passport');
-var passportConfig = require('./config/passport');
 var appConfig = require('./config/appConfig');
 
 
@@ -23,6 +22,7 @@ if ('development' == app.get('env')) {
 }
 
 //Config passport
+require('./config/passport');
 app.use(passport.initialize());
 app.use(passport.session());
 

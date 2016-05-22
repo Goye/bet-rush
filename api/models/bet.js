@@ -20,4 +20,4 @@ var betSchema = new schema({
     updateAt: Date
 });
 
-module.exports = mongoose.model('bet', betSchema);
+module.exports = mongoose.model('bets', betSchema);
