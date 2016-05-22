@@ -1,6 +1,5 @@
 (function() {
   angular.module('betrush', [
-    'betrush.header',
     'betrush.login',
     'betrush.bet',
     'betrush.won',
