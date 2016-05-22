@@ -6,6 +6,7 @@
   function NewBetCtrl($scope, ResourceFactory, $window, $http, $timeout, $state) {
     var vm = this;
     vm.bet = {};
+    vm.bet.category = 'cine';
     console.log('new bet');
 
     vm.goToFeed = function() {

@@ -51,7 +51,15 @@
         option: option
       }
       console.log('data', data)
-      vm.closeCard(card);
+      $http.post('/api/save/bet', data)
+        .success(function(res) {
+          console.log('success res', res)
+          vm.closeCard(card);
+        })
+        .error(function(error) {
+          console.log('error', error)
+        })
+
     }
   }
 }());
