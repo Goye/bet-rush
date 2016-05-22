@@ -25,7 +25,8 @@ def create_event(event):
 	print("Event successfully entered in db with id {}".format(event_id))
 
 def close_event(winning_options):
-	event = events.find_one({'socialId': winning_options['original_id']})
+
+	event = events.find_one({'socialId': str(winning_options['original_id'])})
 	print event
 	if(event):
 		obj_id = event['_id']

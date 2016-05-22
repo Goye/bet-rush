@@ -1,0 +1,218 @@
+/* 1 */
+{
+    "_id" : ObjectId("574137b0ae758c7f6c1c134b"),
+    "category" : [ 
+        "Television", 
+        "The Simpsons"
+    ],
+    "socialId" : "734241892125278208",
+    "name" : "#VuelvenLosSimpsonsEnCaracol",
+    "closed" : false,
+    "live" : "60000",
+    "options" : [ 
+        "Si", 
+        "No"
+    ]
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("574137c0ae758c7f6c1c134c"),
+    "category" : [ 
+        "Hackathon"
+    ],
+    "socialId" : "734241980260220929",
+    "name" : "#BetRushGanaAngelHack",
+    "closed" : false,
+    "live" : "60000",
+    "options" : [ 
+        "Si", 
+        "No"
+    ]
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("574137cbae758c7f6c1c134d"),
+    "category" : [ 
+        "futbol", 
+        "UEFA Champions"
+    ],
+    "socialId" : "734242024120037376",
+    "name" : "#AnotaPenalCristianoRonaldo",
+    "closed" : false,
+    "live" : "60000",
+    "options" : [ 
+        "Si", 
+        "No"
+    ]
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("574137d5ae758c7f6c1c134e"),
+    "category" : [ 
+        "futbol", 
+        "Copa Libertadores"
+    ],
+    "socialId" : "734242067841486848",
+    "name" : "#HayPeleaNacionalRosarioCentral",
+    "closed" : false,
+    "live" : "60000",
+    "options" : [ 
+        "Si", 
+        "No"
+    ]
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("574137dfae758c7f6c1c134f"),
+    "category" : [ 
+        "Cine"
+    ],
+    "socialId" : "734242111499997186",
+    "name" : "#GanaCapitanAmericaOIronMan",
+    "closed" : false,
+    "live" : "60000",
+    "options" : [ 
+        "capitan", 
+        "ironman"
+    ]
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("5741381cae758c7f6c1c1350"),
+    "category" : [ 
+        "futbol", 
+        "Copa Libertadores"
+    ],
+    "socialId" : "734242367344152576",
+    "name" : "#HayPeleaNacionalRosarioCentral",
+    "closed" : false,
+    "live" : "60000",
+    "options" : [ 
+        "Si", 
+        "No"
+    ]
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("57413827ae758c7f6c1c1351"),
+    "category" : [ 
+        "Cine"
+    ],
+    "socialId" : "734242412013457408",
+    "name" : "#GanaCapitanAmericaOIronMan",
+    "closed" : false,
+    "live" : "60000",
+    "options" : [ 
+        "capitan", 
+        "ironman"
+    ]
+}
+
+/* 8 */
+{
+    "_id" : ObjectId("57413831ae758c7f6c1c1352"),
+    "category" : [ 
+        "Television", 
+        "The Simpsons"
+    ],
+    "socialId" : "734242455458091008",
+    "name" : "#VuelvenLosSimpsonsEnCaracol",
+    "closed" : false,
+    "live" : "60000",
+    "options" : [ 
+        "Si", 
+        "No"
+    ]
+}
+
+/* 9 */
+{
+    "_id" : ObjectId("57413846ae758c7f6c1c1353"),
+    "category" : [ 
+        "Hackathon"
+    ],
+    "socialId" : "734242543001571328",
+    "name" : "#BetRushGanaAngelHack",
+    "closed" : false,
+    "live" : "60000",
+    "options" : [ 
+        "Si", 
+        "No"
+    ]
+}
+
+/* 10 */
+{
+    "_id" : ObjectId("57413b58ae758c03cca45d8b"),
+    "category" : [ 
+        "futbol", 
+        "UEFA Champions"
+    ],
+    "socialId" : "734245818736214016",
+    "name" : "#AnotaPenalCristianoRonaldo",
+    "closed" : false,
+    "live" : "60000",
+    "options" : [ 
+        "Si", 
+        "No"
+    ]
+}
+
+/* 11 */
+{
+    "_id" : ObjectId("57413b80ae758c03cca45d8c"),
+    "category" : [ 
+        "futbol", 
+        "Copa Libertadores"
+    ],
+    "socialId" : "734246005600858112",
+    "name" : "#HayPeleaNacionalRosarioCentral",
+    "closed" : false,
+    "live" : "60000",
+    "options" : [ 
+        "Si", 
+        "No"
+    ]
+}
+
+/* 12 */
+{
+    "_id" : ObjectId("57413befae758c0420f73b8c"),
+    "category" : [ 
+        "futbol", 
+        "Copa Libertadores"
+    ],
+    "socialId" : "734246451509919744",
+    "name" : "#HayPeleaNacionalRosarioCentral",
+    "closed" : true,
+    "live" : "60000",
+    "options" : [ 
+        "Si", 
+        "No"
+    ],
+    "results" : [ 
+        "Si"
+    ]
+}
+
+/* 13 */
+{
+    "_id" : ObjectId("57413c15ae758c0420f73b8e"),
+    "category" : [ 
+        "Cine"
+    ],
+    "socialId" : "734246624243908610",
+    "name" : "#GanaCapitanAmericaOIronMan",
+    "closed" : false,
+    "live" : "60000",
+    "options" : [ 
+        "capitan", 
+        "ironman"
+    ]
+}
