@@ -5,8 +5,8 @@ import time
 
 client = MongoClient('localhost', 27017)
 db = client.betrush
-events = db.event
-notifications = db.notification
+events = db.events
+notifications = db.notifications
 
 def process_event(status):
 	#TODO delete this comment	
