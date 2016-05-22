@@ -53,6 +53,12 @@
   position: relative
   text-align: center
 
+.timer
+  height: 3px
+  width: 40px
+  background: #d9534f
+  animation: timer 5s linear
+
 .cant
   font-size: 25px
   color: #5bc0de
@@ -85,7 +91,7 @@ p
 .btn-semi
   border-top-left-radius: 0
   border-top-right-radius: 0
-  width: 49.3%
+  width: 50%
   border: 0
 
   &-left
@@ -93,3 +99,9 @@ p
 
   &-right
     border-bottom-left-radius: 0
+
+@keyframes timer
+  0%
+    width: 0px
+  100%
+    width: 100%

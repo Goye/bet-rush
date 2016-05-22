@@ -32,20 +32,24 @@
       </div>
     </div>
   </div>
-  
+
   <div class="col-sm-12" ng-repeat="card in vm.data">
     <div class="thumbnail">
       <div class="header">
         <span class="label">{{card.category[0]}}</span>
-        <span class="glyphicon glyphicon-minus cant-minus"></span>
-        <span class="cant">10</span>
-        <span class="glyphicon glyphicon-plus cant-plus"></span>
-        <span class="glyphicon glyphicon-remove-circle pull-right"></span>
+        <span class="glyphicon glyphicon-minus cant-minus" ng-click="vm.minus(card)"></span>
+        <span class="cant">${{card.cant}}</span>
+        <span class="glyphicon glyphicon-plus cant-plus" ng-click="vm.add(card)"></span>
+        <span class="glyphicon glyphicon-remove-circle pull-right" ng-click="vm.closeCard(card)"></span>
       </div>
+      <div class="timer"></div>
       <div class="caption">
         <p class="bet-text">{{card.name}}</p>
       </div>
-      <p><a href="#" class="btn btn-success btn-semi btn-semi-left" role="button">SI</a> <a href="#" class="btn btn-danger btn-semi btn-semi-right" role="button">NO</a></p>
+      <p>
+      <a href="#" class="btn btn-semi" ng-class="$index ? 'btn-danger btn-semi-right': 'btn-success btn-semi-left'" role="button" ng-repeat="opt in card.options" ng-click="vm.sendAnswer(card, opt)">{{opt}}</a>
+        <!-- <a href="#" class="btn btn-success btn-semi btn-semi-left" role="button" ng-click="vm.sendAnswer(card, 'yes')">SI</a>
+        <a href="#" class="btn btn-danger btn-semi btn-semi-right" role="button" ng-click="vm.sendAnswer(card, 'no')">NO</a></p> -->
     </div>
 
 </div>
